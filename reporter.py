@@ -21,7 +21,7 @@ def main():
         return
 
     region = "Unknown"
-    template = string.Template(u"""songmu/horenso report
+    template = string.Template(u"""Songmu/horenso report
 $hostname: $commandArgs
 - Result:     $result
 - StartAt:    $startAt
@@ -48,7 +48,7 @@ $stderr
         "OldStateValue": "INSUFFICIENT_DATA",
         "Trigger": {
             "MetricName": " ".join(report["commandArgs"]),
-            "Namespace": "songmu/horenso",
+            "Namespace": "Songmu/horenso",
             "StatisticType": "Statistic",
             "Statistic": "COUNT",
             "Unit": None,
